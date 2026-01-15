@@ -1,13 +1,21 @@
 #!/bin/bash
 # ============================================================
-# Script Name : generate.sh
+# Script Name : configure
 # Author      : Brenddon Andrade
 # Created     : 13-Jan-2026
 # Version     : 1.0
 # Description : This script will create a new ssh key for you computer.
-# Usage       : ./generate.sh
+# Usage       : ./configure
 # ============================================================
 # Reference: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+
+# verify compatibility
+if [[ "$(uname)" == "Linux" ]]; then
+    echo "Running on Linux ✅"
+else
+    echo "This script only supports Linux ❌"
+    exit 1
+fi
 
 # 1 Generating a new SSH key
 ## get your email
