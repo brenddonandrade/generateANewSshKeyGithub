@@ -17,10 +17,16 @@ else
     exit 1
 fi
 
+# git configs
+read -p"Type your name: " name
+
 # 1 Generating a new SSH key
 ## get your email
 read -p "Type your email: " email 
 ssh-keygen -t ed25519 -C "$email"
+
+git config --global user.name "$name"
+git config --global user.email "$email"
 
 # 2 Adding your SSH key to the ssh-agent
 ## Start the ssh-agent in the background.
