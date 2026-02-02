@@ -1,8 +1,3 @@
-# generateANewSshKeyGithub
-
-Here’s a polished **README.md** draft you can use for your project. It explains the purpose of your script, how to use it, and what steps it automates:
-
-```markdown
 # 🔑 Generate a New SSH Key for GitHub
 
 This repository contains a simple Bash script that helps you generate and configure a new SSH key for use with GitHub.  
